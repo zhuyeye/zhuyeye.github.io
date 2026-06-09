@@ -26,6 +26,7 @@ body {
   font-family: "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 
 body {
@@ -49,7 +50,7 @@ a:hover {
 .layout-shell {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 calc(var(--layout-gap) * -0.5);
+  margin: 0 auto;
 }
 
 .layout-shell > * {
@@ -74,6 +75,9 @@ a:hover {
 
 .site-shell {
   padding-top: 2.25rem;
+  width: min(100%, 1440px);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .section-block {
@@ -151,6 +155,11 @@ a:hover {
   color: var(--text-secondary);
 }
 
+.profile-meta:nth-of-type(2) {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 .section-card {
   border-radius: var(--radius-lg);
   background: var(--surface-strong);
@@ -185,6 +194,10 @@ a:hover {
   margin-bottom: 0.6rem;
   font-size: 0.92rem;
   color: var(--text-secondary);
+}
+
+#about .section-copy {
+  font-size: 1.03rem;
 }
 
 .timeline-entry,
@@ -241,7 +254,7 @@ a:hover {
 .work-container {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .work-container .work-scroll {
@@ -255,23 +268,22 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.5rem 1.25rem;
-  max-width: 230px;
-  opacity: 0.5;
-  transition: opacity 200ms ease;
-}
-
-.work-logos:hover {
-  opacity: 0.8;
+  gap: 0.6rem;
+  max-width: 310px;
+  opacity: 1;
 }
 
 .work-logos img {
-  max-height: 28px;
-  max-width: 46px;
+  max-height: 38px;
+  max-width: 92px;
   width: auto;
   height: auto;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 10px;
+  padding: 0.35rem 0.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(29, 29, 31, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
 }
 
 .logo-pill {
@@ -336,6 +348,9 @@ a:hover {
     rgba(10, 132, 255, 0.07) 65%,
     rgba(10, 132, 255, 0.11) 100%
   );
+  border-radius: var(--radius-md);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .paper-row.is-highlighted .paper-title {
@@ -448,12 +463,13 @@ a:hover {
   }
 
   .work-logos {
-    max-width: 120px;
-    gap: 0.3rem 0.6rem;
+    max-width: 210px;
+    gap: 0.4rem;
   }
 
   .work-logos img {
-    max-height: 18px;
-    max-width: 32px;
+    max-height: 30px;
+    max-width: 68px;
+    padding: 0.25rem 0.35rem;
   }
 }
