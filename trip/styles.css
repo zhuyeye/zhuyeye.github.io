@@ -19,7 +19,7 @@ a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 .shell { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
 
-.hero { min-height: 660px; color: var(--white); position: relative; overflow: hidden; background: #19444a url("assets/route-hero.png") center/cover; }
+.hero { min-height: 660px; color: var(--white); position: relative; overflow: hidden; background: #19444a url("assets/route-hero-real.jpg") center/cover; }
 .hero::after { content: ""; position: absolute; inset: 0; background: rgba(13, 45, 52, .63); pointer-events: none; }
 .topbar, .hero-content, .hero-image-credit { position: relative; z-index: 1; }
 .topbar { height: 92px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.2); }
@@ -118,18 +118,20 @@ h2 span { color: var(--coral); }
 .note-small { margin: 0; color: rgba(255,255,255,.52) !important; font-size: 10px !important; }
 
 .stay-section { padding-bottom: 105px; }
-.stay-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.stay-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .stay-card { background: var(--white); }
 .stay-image { height: 160px; background-position: center; background-size: cover; }
-.image-jingdezhen { background-image: url("assets/jingdezhen.png"); }
-.image-yushan { background-image: url("assets/sanqingshan.png"); }
-.image-hangzhou { background-image: url("assets/hangzhou.png"); }
+.image-jingdezhen { background-image: url("assets/jingdezhen-real.jpg"); }
+.image-yushan { background-image: url("assets/sanqingshan-real.jpg"); }
+.image-shangrao { background-image: url("assets/shangrao-real.jpg"); }
+.image-hangzhou { background-image: url("assets/hangzhou-real.jpg"); }
 .stay-content { padding: 22px 22px 24px; }
 .stay-index { display: block; color: var(--coral); font-size: 10px; font-weight: 700; letter-spacing: .08em; }
 .stay-content h3 { display: inline-block; margin: 8px 14px 10px 0; font-size: 25px; }
 .stay-content > strong { font-size: 12px; font-weight: 600; }
 .stay-content p { min-height: 42px; margin-bottom: 16px; color: var(--muted); font-size: 12px; }
 .stay-tag { padding: 5px 9px; color: #527060; background: #e5eee8; }
+.photo-credit { margin: 18px 0 0; color: var(--muted); font-size: 10px; }
 
 .checklist-section { padding-bottom: 110px; }
 .checklist-header { display: flex; align-items: end; justify-content: space-between; margin-bottom: 30px; }
