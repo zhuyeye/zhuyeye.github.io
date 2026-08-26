@@ -13,6 +13,23 @@
   </head>
   <body>
     <header class="hero" id="top">
+      <div class="hero-gallery" aria-hidden="true">
+        <div class="hero-slide active">
+          <span class="hero-tile" style="--tile-image: url('assets/route-hero-real.jpg'); --tile-index: 0"></span>
+          <span class="hero-tile" style="--tile-image: url('assets/jingdezhen-real.jpg'); --tile-index: 1"></span>
+          <span class="hero-tile" style="--tile-image: url('assets/hangzhou-real.jpg'); --tile-index: 2"></span>
+        </div>
+        <div class="hero-slide">
+          <span class="hero-tile" style="--tile-image: url('assets/sanqingshan-real.jpg'); --tile-index: 0"></span>
+          <span class="hero-tile" style="--tile-image: url('assets/jingdezhen-02-real.jpg'); --tile-index: 1"></span>
+          <span class="hero-tile" style="--tile-image: url('assets/hangzhou-02-real.jpg'); --tile-index: 2"></span>
+        </div>
+        <div class="hero-slide">
+          <span class="hero-tile" style="--tile-image: url('assets/sanqing-03-real.jpg'); --tile-index: 0"></span>
+          <span class="hero-tile" style="--tile-image: url('assets/jingdezhen-03-real.jpg'); --tile-index: 1"></span>
+          <span class="hero-tile" style="--tile-image: url('assets/hangzhou-03-real.jpg'); --tile-index: 2"></span>
+        </div>
+      </div>
       <nav class="topbar shell" aria-label="主导航">
         <a class="brand" href="#top"><span class="brand-mark">JZ</span><span>瓷都入山</span></a>
         <div class="nav-links">
@@ -40,7 +57,12 @@
           <div><span>返程</span><strong>10.5 · 18:00 航班</strong></div>
         </div>
       </div>
-      <div class="hero-image-credit">景德镇 · 三清山 · 上饶 · 杭州</div>
+      <div class="hero-carousel-ui" aria-label="主视觉照片切换">
+        <button class="hero-dot active" type="button" data-slide-to="0" aria-label="显示第一组照片" aria-current="true"></button>
+        <button class="hero-dot" type="button" data-slide-to="1" aria-label="显示第二组照片"></button>
+        <button class="hero-dot" type="button" data-slide-to="2" aria-label="显示第三组照片"></button>
+      </div>
+      <div class="hero-image-credit">真实照片 · 三清山 / 景德镇 / 西湖</div>
     </header>
 
     <main>
@@ -61,7 +83,7 @@
       <section class="section shell intro-section">
         <div class="section-heading">
           <div><p class="eyebrow dark">The route</p><h2>一条不回头的<br /><span>高铁旅行线</span></h2></div>
-          <p class="section-note">10月2日下午离开景德镇，住三清山金沙索道附近；10月3日白天游三清山，下午下山后直接转住上饶；10月4日从上饶站乘高铁去杭州。</p>
+          <p class="section-note">10月2日下午离开景德镇，住三清山金沙索道附近；10月3日外双溪上、金沙下，下午下山后直接转住上饶；10月4日从上饶站乘高铁去杭州。</p>
         </div>
         <div class="stat-grid">
           <div class="stat-card"><strong>4</strong><span>城市 / 景区节点</span></div>
@@ -118,13 +140,14 @@
         <article class="day-panel" data-panel="day4">
           <div class="day-header"><div><span class="day-number">04</span><div><p class="eyebrow dark">Saturday · Mountain day</p><h3>三清山经典白天环线</h3></div></div><span class="stay-pill">住 · 上饶</span></div>
           <div class="timeline">
-            <div class="time-item"><time>06:00</time><div><strong>民宿 → 金沙索道</strong><p>民宿就在索道附近，提前确认接驳方式，目标7点前到检票口。</p></div></div>
-            <div class="time-item"><time>07:00—08:30</time><div><strong>排队、乘金沙索道上山</strong><p>提前购买景区门票＋金沙索道往返票，具体价格和运营时间以官方公告为准。</p></div></div>
-            <div class="time-item"><time>08:30—14:30</time><div><strong>巨蟒出山 → 东方女神 → 玉台 → 南清园 → 阳光海岸</strong><p>山上简餐。阳光海岸按当天体力和客流决定。</p></div></div>
-            <div class="time-item"><time>14:30—17:30</time><div><strong>下山 → 上饶市区</strong><p>提前约包车或网约车，从金沙索道下站直达上饶；国庆不建议临时卡玉山南换乘。</p></div></div>
-            <div class="time-item"><time>18:30—20:30</time><div><strong>信江江滨 → 双塔公园 → 水南街</strong><p>安排轻松的江边夜走和晚餐，体力允许再逛市中心夜市。</p></div></div>
+            <div class="time-item"><time>06:00—07:00</time><div><strong>退房寄存 → 外双溪索道（南部）</strong><p>行李寄存在民宿，只带水和当天装备；提前约车前往外双溪索道，确认南部索道当日开放。</p></div></div>
+            <div class="time-item"><time>07:00—08:30</time><div><strong>外双溪上山 → 西海岸</strong><p>选择“外双溪上行、金沙下行”的跨索道组合，排队和接驳时间按国庆客流预留。</p></div></div>
+            <div class="time-item"><time>08:30—13:00</time><div><strong>西海岸 → 三清宫 → 阳光海岸</strong><p>先走西海岸高空栈道，再经三清宫转阳光海岸；途中安排山上简餐。</p></div></div>
+            <div class="time-item"><time>13:00—16:00</time><div><strong>南清园：东方女神 → 玉台 → 巨蟒出山</strong><p>沿经典观景点向金沙方向走，按体力删减支线，不在山上走回头路。</p></div></div>
+            <div class="time-item"><time>16:00—19:00</time><div><strong>金沙下山 → 取行李 → 上饶市区</strong><p>提前约车从金沙索道下站回民宿取行李，再直达上饶；索道和山路时间以当天公告为准。</p></div></div>
+            <div class="time-item"><time>19:30—21:00</time><div><strong>入住 → 信江江滨 / 双塔公园</strong><p>先办理入住，再安排轻松的江边夜走和晚餐；若下山晚则直接休息。</p></div></div>
           </div>
-          <div class="day-foot"><span>路线：金沙索道上下</span><span>住：上饶高铁站片区</span></div>
+          <div class="day-foot"><span>路线：外双溪上 / 金沙下</span><span>住：上饶高铁站片区</span></div>
         </article>
 
         <article class="day-panel" data-panel="day5">
@@ -155,7 +178,7 @@
           <div class="booking-list">
             <div class="booking-row"><span class="booking-date">现在</span><div><strong>先锁可取消住宿</strong><p>景德镇2晚、三清山山脚1晚、上饶1晚、杭州1晚。房型确认3位成人可入住，优先家庭房 / 双床房。</p></div><span class="status ready">可执行</span></div>
             <div class="booking-row"><span class="booking-date">约9月中旬</span><div><strong>12306分批开票</strong><p>铁路通常提前15天售票，各车站起售时间不同。重点盯深圳北→景德镇北、景德镇北→玉山南、上饶→杭州东。</p></div><span class="status watch">提醒</span></div>
-            <div class="booking-row"><span class="booking-date">票务开放后</span><div><strong>三清山门票＋金沙索道</strong><p>在“三清山旅游”官方渠道选择10月3日、金沙索道、往返票，并提前约下山去上饶的车。</p></div><span class="status urgent">优先</span></div>
+            <div class="booking-row"><span class="booking-date">票务开放后</span><div><strong>三清山门票＋跨索道组合</strong><p>在“三清山旅游”官方渠道确认10月3日外双溪上行、金沙下行的单程组合是否开放；若不支持，现场咨询换乘规则并准备备用路线。</p></div><span class="status urgent">优先</span></div>
             <div class="booking-row"><span class="booking-date">预约开放后</span><div><strong>中国陶瓷博物馆、御窑博物馆</strong><p>前者通常免费实名预约；后者按官方页面购票或预约。国庆不要把热门馆安排到下午最后一场。</p></div><span class="status urgent">优先</span></div>
             <div class="booking-row"><span class="booking-date">杭州行前</span><div><strong>灵隐寺＋飞来峰</strong><p>灵隐寺香花券和飞来峰门票分开确认，选择10月5日早时段；西湖、龙井村、九溪本身不需要门票预约。</p></div><span class="status watch">提醒</span></div>
           </div>
@@ -167,11 +190,11 @@
           <div class="section-heading compact"><div><p class="eyebrow dark">Sleep well</p><h2>住宿落点</h2></div><p class="section-note">三人房型请提前确认入住人数与加床规则。</p></div>
         <div class="stay-grid">
           <article class="stay-card"><div class="stay-image image-jingdezhen" role="img" aria-label="景德镇陶瓷窑房与青花瓷"></div><div class="stay-content"><span class="stay-index">01 · 2晚</span><h3>景德镇</h3><strong>全季景德镇北陶溪川酒店</strong><p>9月30日、10月1日连住，方便安排陶瓷博物馆、御窑博物馆和陶溪川。</p><span class="stay-tag">市区 / 夜游</span></div></article>
-          <article class="stay-card"><div class="stay-image image-sanqingshan" role="img" aria-label="三清山峰林与山间村落"></div><div class="stay-content"><span class="stay-index">02 · 1晚</span><h3>三清山</h3><strong>隐泉·HolidayVilla望山观景民宿（三清山金沙索道店）</strong><p>10月2日晚住在索道附近，第二天少一段山路接驳，适合早起登山。</p><span class="stay-tag">索道旁</span></div></article>
+          <article class="stay-card"><div class="stay-image image-sanqingshan" role="img" aria-label="三清山峰林与山间村落"></div><div class="stay-content"><span class="stay-index">02 · 1晚</span><h3>三清山</h3><strong>隐泉·HolidayVilla望山观景民宿（三清山金沙索道店）</strong><p>10月2日晚住在金沙索道附近；10月3日轻装前往外双溪上山，金沙下山后取行李。</p><span class="stay-tag">金沙索道旁</span></div></article>
           <article class="stay-card"><div class="stay-image image-shangrao" role="img" aria-label="上饶信江与城区桥梁"></div><div class="stay-content"><span class="stay-index">03 · 1晚</span><h3>上饶</h3><strong>全季上饶高铁站酒店</strong><p>三清山下山后直接入住，晚上可去信江江滨、双塔公园散步，次日去高铁站方便。</p><span class="stay-tag">高铁衔接</span></div></article>
           <article class="stay-card"><div class="stay-image image-hangzhou" role="img" aria-label="杭州西湖与游船"></div><div class="stay-content"><span class="stay-index">04 · 1晚</span><h3>杭州</h3><strong>全季杭州西湖武林广场酒店</strong><p>10月4日晚入住，方便安排西湖夜景、灵隐寺，并控制去萧山机场的时间。</p><span class="stay-tag">返程友好</span></div></article>
         </div>
-        <p class="photo-credit">照片来源：<a href="https://commons.wikimedia.org/wiki/File:01-Jingdezhen_Imperial_Kiln_Museum.jpg" target="_blank" rel="noreferrer">景德镇御窑博物馆</a>（Zhu Pei，CC BY-SA 4.0）、<a href="https://commons.wikimedia.org/wiki/File:19190-SanQingShan_(45434925915).jpg" target="_blank" rel="noreferrer">三清山峰林</a>（xiquinhosilva，CC BY 2.0）、<a href="https://commons.wikimedia.org/wiki/File:Sanqing_Mountain1.jpg" target="_blank" rel="noreferrer">三清山云雾</a>（Huangdan2060，CC0）、<a href="https://commons.wikimedia.org/wiki/File:Xinzhou_District,_Shangrao_20171028_113223.jpg" target="_blank" rel="noreferrer">上饶信州区</a>（Qa003qa003，CC BY-SA 4.0）、<a href="https://commons.wikimedia.org/wiki/File:20090524_Hangzhou_West_Lake_7531.jpg" target="_blank" rel="noreferrer">杭州西湖</a>（Jakub Hałun，CC BY-SA 3.0）。</p>
+        <p class="photo-credit">照片来源：<a href="https://commons.wikimedia.org/wiki/File:01-Jingdezhen_Imperial_Kiln_Museum.jpg" target="_blank" rel="noreferrer">景德镇御窑博物馆</a>（Zhu Pei，CC BY-SA 4.0）、<a href="https://commons.wikimedia.org/wiki/File:Jingdezhen_China_Ceramics_Museum_20231020_13.jpg" target="_blank" rel="noreferrer">景德镇中国陶瓷博物馆</a>（沈澄心，CC0）、<a href="https://commons.wikimedia.org/wiki/File:Qing_Jingdezhen_Porcelain,_Qianlong_Reign_13.jpg" target="_blank" rel="noreferrer">景德镇清代瓷器</a>（CC0）、<a href="https://commons.wikimedia.org/wiki/File:19190-SanQingShan_(45434925915).jpg" target="_blank" rel="noreferrer">三清山峰林</a>（xiquinhosilva，CC BY 2.0）、<a href="https://commons.wikimedia.org/wiki/File:Sanqing_Mountain1.jpg" target="_blank" rel="noreferrer">三清山云雾</a>（Huangdan2060，CC0）、<a href="https://commons.wikimedia.org/wiki/File:20240213_SanQing_Shan_(072406).jpg" target="_blank" rel="noreferrer">三清山峰柱</a>（Yumeto，CC BY-SA 4.0）、<a href="https://commons.wikimedia.org/wiki/File:Xinzhou_District,_Shangrao_20171028_113223.jpg" target="_blank" rel="noreferrer">上饶信州区</a>（Qa003qa003，CC BY-SA 4.0）、<a href="https://commons.wikimedia.org/wiki/File:20090524_Hangzhou_West_Lake_7531.jpg" target="_blank" rel="noreferrer">杭州西湖</a>（Jakub Hałun，CC BY-SA 3.0）、<a href="https://commons.wikimedia.org/wiki/File:20260424_West_Lake_and_Hangzhou_Skyline.jpg" target="_blank" rel="noreferrer">西湖与杭州天际线</a>（Windmemories，CC BY-SA 4.0）、<a href="https://commons.wikimedia.org/wiki/File:20260424_Longjing_Village.jpg" target="_blank" rel="noreferrer">龙井村</a>（Windmemories，CC BY-SA 4.0）。</p>
       </section>
 
       <section class="section shell checklist-section" id="checklist">
@@ -181,7 +204,7 @@
           <label class="check-item"><input type="checkbox" /><span>锁定四地五晚酒店与合适房型</span></label>
           <label class="check-item"><input type="checkbox" /><span>设置12306开票提醒并准备候补</span></label>
           <label class="check-item"><input type="checkbox" /><span>预约中国陶瓷博物馆与御窑博物馆</span></label>
-          <label class="check-item"><input type="checkbox" /><span>购买三清山金沙索道往返票</span></label>
+          <label class="check-item"><input type="checkbox" /><span>确认三清山外双溪上、金沙下票型</span></label>
           <label class="check-item"><input type="checkbox" /><span>预约灵隐寺、飞来峰早时段</span></label>
         </div>
       </section>
