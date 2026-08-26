@@ -72,6 +72,43 @@ h1 em { color: var(--sand); font-style: normal; }
 .route-point strong { font-size: 13px; font-weight: 600; }
 .route-connector { height: 1px; flex: 1; background: var(--line); min-width: 25px; }
 
+.map-section { padding-top: 88px; padding-bottom: 12px; }
+.map-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(275px, .75fr); gap: 24px; align-items: stretch; }
+.map-board { overflow: hidden; background: #e9f0eb; border: 1px solid var(--line); }
+.map-svg { display: block; width: 100%; height: auto; }
+.map-ground { fill: #e9f0eb; }
+.map-water { fill: #dcebef; opacity: .8; }
+.map-contour { fill: none; stroke: #cbd9d1; stroke-width: 2; opacity: .8; }
+.map-route { fill: none; stroke: var(--coral); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 16; }
+.map-point { fill: var(--white); stroke: var(--coral); stroke-width: 4; }
+.map-point.mountain { fill: var(--sand); }
+.map-point.airport { fill: var(--deep); stroke: var(--deep); }
+.map-date, .map-name, .map-caption { font-family: var(--sans); paint-order: stroke; stroke: rgba(233,240,235,.92); stroke-width: 5px; stroke-linejoin: round; }
+.map-date { fill: var(--coral); font-size: 13px; font-weight: 700; }
+.map-name { fill: var(--deep); font-size: 16px; font-weight: 700; }
+.map-caption { fill: var(--deep); font-size: 16px; font-weight: 700; stroke-width: 7px; }
+.map-caption.muted { fill: var(--muted); font-size: 11px; font-weight: 500; }
+.map-list { margin: 0; padding: 0; list-style: none; background: var(--white); border-top: 1px solid var(--line); }
+.map-list li { display: grid; grid-template-columns: 58px 1fr; gap: 14px; min-height: 68px; padding: 14px 17px; border-bottom: 1px solid var(--line); }
+.map-list-date { padding-top: 1px; color: var(--coral); font-size: 11px; font-weight: 700; }
+.map-list strong { display: block; color: var(--deep); font-size: 12px; line-height: 1.45; }
+.map-list small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; line-height: 1.45; }
+
+.reminders-section { padding-top: 88px; padding-bottom: 100px; }
+.reminder-progress { color: var(--coral); font-family: var(--serif); font-size: 21px; }
+.reminder-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.reminder-group { min-width: 0; padding-top: 18px; border-top: 2px solid var(--deep); }
+.reminder-group:nth-child(2) { border-top-color: var(--coral); }
+.reminder-group:nth-child(3) { border-top-color: #6d8e7b; }
+.reminder-group:nth-child(4) { border-top-color: #a9885c; }
+.reminder-kicker { margin: 0 0 7px; color: var(--coral); font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+.reminder-group h3 { margin-bottom: 7px; color: var(--deep); font-size: 23px; }
+.reminder-group > p:not(.reminder-kicker) { min-height: 39px; margin-bottom: 16px; color: var(--muted); font-size: 11px; }
+.reminder-list { border-top: 1px solid var(--line); }
+.reminder-item { display: flex; align-items: flex-start; gap: 9px; padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--deep); cursor: pointer; font-size: 11px; line-height: 1.45; }
+.reminder-item input { flex: 0 0 auto; width: 15px; height: 15px; margin: 1px 0 0; accent-color: var(--coral); }
+.reminder-item:has(input:checked) span { color: var(--muted); text-decoration: line-through; }
+
 .section { padding-top: 105px; }
 .intro-section { padding-bottom: 98px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 42px; }
@@ -176,6 +213,11 @@ h2 span { color: var(--coral); }
   .hero-meta div { min-width: 115px; }
   .route-line { overflow-x: auto; justify-content: start; padding-top: 17px; padding-bottom: 17px; }
   .route-connector { min-width: 24px; flex: 0 0 24px; }
+  .map-section { padding-top: 66px; }
+  .map-layout { display: block; }
+  .map-list { margin-top: 18px; }
+  .reminders-section { padding-top: 70px; padding-bottom: 75px; }
+  .reminder-grid { grid-template-columns: repeat(2, 1fr); gap: 34px 20px; }
   .section { padding-top: 70px; }
   .section-heading { display: block; margin-bottom: 28px; }
   .section-note { margin-top: 20px; }
@@ -205,6 +247,10 @@ h2 span { color: var(--coral); }
   .checklist { grid-template-columns: 1fr; }
   .checklist-section { padding-bottom: 75px; }
   .footer-inner { align-items: flex-start; }
+}
+
+@media (max-width: 500px) {
+  .reminder-grid { grid-template-columns: 1fr; gap: 28px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

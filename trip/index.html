@@ -33,7 +33,9 @@
       <nav class="topbar shell" aria-label="主导航">
         <a class="brand" href="#top"><span class="brand-mark">JZ</span><span>瓷都入山</span></a>
         <div class="nav-links">
+          <a href="#map">地图</a>
           <a href="#itinerary">行程</a>
+          <a href="#reminders">提醒</a>
           <a href="#booking">预订</a>
           <a href="#stay">住宿</a>
           <a href="#checklist">清单</a>
@@ -77,6 +79,104 @@
           <div class="route-point"><span class="route-dot">04</span><div><small>10.03—10.04</small><strong>上饶</strong></div></div>
           <span class="route-connector"></span>
           <div class="route-point"><span class="route-dot">05</span><div><small>10.04—10.05</small><strong>杭州</strong></div></div>
+        </div>
+      </section>
+
+      <section class="section shell map-section" id="map">
+        <div class="section-heading compact">
+          <div><p class="eyebrow dark">Follow the line</p><h2>按日期走的<br /><span>路线地图</span></h2></div>
+          <p class="section-note">城际优先高铁；三清山当天按“港首索道上、金沙索道下”走，10月3日晚住上饶，10月4日再去杭州。</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-board">
+            <svg class="map-svg" viewBox="0 0 1000 520" role="img" aria-labelledby="mapTitle mapDesc">
+              <title id="mapTitle">深圳、景德镇、三清山、上饶、杭州行程路线图</title>
+              <desc id="mapDesc">按日期从深圳出发，经过景德镇、港首索道、金沙索道和上饶，最后到杭州及萧山机场。</desc>
+              <rect class="map-ground" width="1000" height="520" rx="2" />
+              <path class="map-contour" d="M-40 130 C140 70 250 150 395 100 S690 45 1040 105" />
+              <path class="map-contour" d="M-60 210 C100 160 235 250 375 205 S730 145 1060 220" />
+              <path class="map-contour" d="M-45 315 C150 260 255 350 420 300 S760 260 1045 315" />
+              <path class="map-contour" d="M-35 425 C150 370 300 455 470 400 S770 365 1040 430" />
+              <path class="map-water" d="M760 -15 C810 68 790 138 830 210 S910 340 875 545 L1030 545 L1030 -15 Z" />
+              <path class="map-route" d="M100 412 C182 376 239 277 320 245 S453 294 500 330 C530 343 557 349 588 354 C629 365 657 364 692 356 C753 320 808 197 850 135 C875 145 892 168 908 195" />
+              <g class="map-node" transform="translate(100 412)">
+                <circle class="map-point" r="10" /><text class="map-date" x="-4" y="-25">09.30</text><text class="map-name" x="-4" y="-43">深圳</text>
+              </g>
+              <g class="map-node" transform="translate(320 245)">
+                <circle class="map-point" r="10" /><text class="map-date" x="-21" y="-25">09.30—10.01</text><text class="map-name" x="-4" y="-43">景德镇</text>
+              </g>
+              <g class="map-node" transform="translate(500 330)">
+                <circle class="map-point mountain" r="10" /><text class="map-date" x="-19" y="30">10.02</text><text class="map-name" x="-35" y="49">港首索道</text>
+              </g>
+              <g class="map-node" transform="translate(588 354)">
+                <circle class="map-point mountain" r="10" /><text class="map-date" x="-18" y="31">10.03</text><text class="map-name" x="-35" y="50">金沙索道</text>
+              </g>
+              <g class="map-node" transform="translate(692 356)">
+                <circle class="map-point" r="10" /><text class="map-date" x="-18" y="31">10.03</text><text class="map-name" x="-4" y="50">上饶</text>
+              </g>
+              <g class="map-node" transform="translate(850 135)">
+                <circle class="map-point" r="10" /><text class="map-date" x="-18" y="-25">10.04</text><text class="map-name" x="-4" y="-43">杭州</text>
+              </g>
+              <g class="map-node" transform="translate(908 195)">
+                <circle class="map-point airport" r="8" /><text class="map-date" x="-18" y="28">10.05</text><text class="map-name" x="-39" y="47">萧山机场</text>
+              </g>
+              <text class="map-caption" x="34" y="42">高铁旅行线 · 2026 国庆</text>
+              <text class="map-caption muted" x="34" y="66">方向与距离为行程示意，接驳以实时交通为准</text>
+            </svg>
+          </div>
+          <ol class="map-list" aria-label="路线日期顺序">
+            <li><span class="map-list-date">09.30</span><div><strong>深圳北 → 景德镇北</strong><small>高铁 · 晚间抵达</small></div></li>
+            <li><span class="map-list-date">10.01</span><div><strong>景德镇市区</strong><small>博物馆、御窑、陶溪川</small></div></li>
+            <li><span class="map-list-date">10.02</span><div><strong>景德镇 → 港首索道</strong><small>高铁至玉山南＋山路包车</small></div></li>
+            <li><span class="map-list-date">10.03</span><div><strong>港首上 → 金沙下 → 上饶</strong><small>三清山环线＋取行李转市区</small></div></li>
+            <li><span class="map-list-date">10.04</span><div><strong>上饶 → 杭州东</strong><small>高铁＋龙井村、西湖</small></div></li>
+            <li><span class="map-list-date">10.05</span><div><strong>杭州 → 萧山机场</strong><small>灵隐寺、西湖西线后返程</small></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section shell reminders-section" id="reminders">
+        <div class="section-heading compact">
+          <div><p class="eyebrow dark">Keep in view</p><h2>行前提醒汇总</h2></div>
+          <span class="reminder-progress" id="reminderProgress">0 / 16</span>
+        </div>
+        <div class="reminder-grid" id="reminderItems">
+          <section class="reminder-group">
+            <p class="reminder-kicker">01 · 交通票</p><h3>高铁要先锁</h3><p>铁路通常提前15天开售，起售时间按车站设置。</p>
+            <div class="reminder-list">
+              <label class="reminder-item"><input type="checkbox" /><span>设置12306开售提醒和候补</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>深圳北→景德镇北、景德镇北→玉山南</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>上饶→杭州东，并核对杭州返程航班</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>提前确认检票口和到站时间</span></label>
+            </div>
+          </section>
+          <section class="reminder-group">
+            <p class="reminder-kicker">02 · 门票预约</p><h3>热门项目别漏</h3><p>预约、购票和索道运营以官方渠道为准。</p>
+            <div class="reminder-list">
+              <label class="reminder-item"><input type="checkbox" /><span>中国陶瓷博物馆实名预约</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>御窑博物馆预约或购票</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>确认三清山港首上、金沙下票型</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>灵隐寺香花券＋飞来峰门票</span></label>
+            </div>
+          </section>
+          <section class="reminder-group">
+            <p class="reminder-kicker">03 · 约车行李</p><h3>接驳提前约</h3><p>国庆山路拥堵，行李寄存和取回要留缓冲。</p>
+            <div class="reminder-list">
+              <label class="reminder-item"><input type="checkbox" /><span>10.2 景德镇→港首索道民宿包车</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>10.3 金沙下山→民宿取行李→上饶</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>和民宿确认行李寄存、取回时间</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>三位成人入住及双床房规则</span></label>
+            </div>
+          </section>
+          <section class="reminder-group">
+            <p class="reminder-kicker">04 · 装备证件</p><h3>山上按户外准备</h3><p>三清山早晚温差和天气变化都要考虑。</p>
+            <div class="reminder-list">
+              <label class="reminder-item"><input type="checkbox" /><span>身份证原件、手机、充电宝和充电线</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>冲锋衣或薄外套、雨衣</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>防滑运动鞋、帽子、防晒用品</span></label>
+              <label class="reminder-item"><input type="checkbox" /><span>饮用水、能量补给和常用药</span></label>
+            </div>
+          </section>
         </div>
       </section>
 

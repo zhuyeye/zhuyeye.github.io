@@ -2,6 +2,7 @@ const tabs = document.querySelectorAll('.day-tab');
 const panels = document.querySelectorAll('.day-panel');
 const toast = document.getElementById('toast');
 const checklistInputs = document.querySelectorAll('.check-item input');
+const reminderInputs = document.querySelectorAll('.reminder-item input');
 const heroSlides = document.querySelectorAll('.hero-slide');
 const heroDots = document.querySelectorAll('.hero-dot');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -67,6 +68,22 @@ checklistInputs.forEach((input, index) => {
 });
 
 updateProgress();
+
+function updateReminderProgress() {
+  const checked = [...reminderInputs].filter((input) => input.checked).length;
+  document.getElementById('reminderProgress').textContent = `${checked} / ${reminderInputs.length}`;
+}
+
+reminderInputs.forEach((input, index) => {
+  const saved = window.localStorage.getItem(`trip-reminder-check-${index}`) === 'true';
+  input.checked = saved;
+  input.addEventListener('change', () => {
+    window.localStorage.setItem(`trip-reminder-check-${index}`, input.checked);
+    updateReminderProgress();
+  });
+});
+
+updateReminderProgress();
 
 function showHeroSlide(nextIndex) {
   heroIndex = (nextIndex + heroSlides.length) % heroSlides.length;
