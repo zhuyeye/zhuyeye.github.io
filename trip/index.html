@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173f48" />
+    <meta name="description" content="2026 国庆景德镇、三清山、杭州高铁旅行攻略" />
+    <title>瓷都入山 · 国庆行程攻略</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="topbar shell" aria-label="主导航">
+        <a class="brand" href="#top"><span class="brand-mark">JZ</span><span>瓷都入山</span></a>
+        <div class="nav-links">
+          <a href="#itinerary">行程</a>
+          <a href="#booking">预订</a>
+          <a href="#stay">住宿</a>
+          <a href="#checklist">清单</a>
+        </div>
+        <button class="top-action" id="shareButton" type="button">分享攻略</button>
+      </nav>
+
+      <div class="hero-content shell">
+        <div class="hero-copy">
+          <p class="eyebrow">2026 · 国庆 6天5晚</p>
+          <h1>从瓷都出发，<br /><em>去山与湖之间。</em></h1>
+          <p class="hero-intro">景德镇的窑火、三清山的云海、杭州的湖光。高铁串联主要城市，留出山路和返程的缓冲。</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#itinerary">查看完整路线 <span>↓</span></a>
+            <button class="text-button" id="printButton" type="button">打印 / 导出 PDF</button>
+          </div>
+        </div>
+        <div class="hero-meta" aria-label="旅程摘要">
+          <div><span>同行</span><strong>2男1女</strong></div>
+          <div><span>主交通</span><strong>高铁</strong></div>
+          <div><span>返程</span><strong>10.5 · 18:00 航班</strong></div>
+        </div>
+      </div>
+      <div class="hero-image-credit">景德镇 · 三清山 · 杭州</div>
+    </header>
+
+    <main>
+      <section class="route-strip" aria-label="路线概览">
+        <div class="shell route-line">
+          <div class="route-point"><span class="route-dot">01</span><div><small>09.30</small><strong>深圳</strong></div></div>
+          <span class="route-connector"></span>
+          <div class="route-point"><span class="route-dot active">02</span><div><small>09.30—10.02</small><strong>景德镇</strong></div></div>
+          <span class="route-connector"></span>
+          <div class="route-point"><span class="route-dot">03</span><div><small>10.02—10.04</small><strong>玉山 · 三清山</strong></div></div>
+          <span class="route-connector"></span>
+          <div class="route-point"><span class="route-dot">04</span><div><small>10.04—10.05</small><strong>杭州</strong></div></div>
+        </div>
+      </section>
+
+      <section class="section shell intro-section">
+        <div class="section-heading">
+          <div><p class="eyebrow dark">The route</p><h2>一条不回头的<br /><span>高铁旅行线</span></h2></div>
+          <p class="section-note">10月2日下午才离开景德镇，保留完整的陶瓷体验；10月3日三清山只走白天环线，晚上回玉山；10月4日上午再去杭州，给山路和国庆客流留出余量。</p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card"><strong>3</strong><span>城市 / 景区节点</span></div>
+          <div class="stat-card"><strong>2</strong><span>玉山连住晚数</span></div>
+          <div class="stat-card"><strong>1</strong><span>不可省的山路接驳</span></div>
+          <div class="stat-card accent"><strong>18:00</strong><span>杭州萧山起飞</span></div>
+        </div>
+      </section>
+
+      <section class="section shell" id="itinerary">
+        <div class="section-heading compact">
+          <div><p class="eyebrow dark">Day by day</p><h2>每日行程</h2></div>
+          <div class="section-tools"><button class="outline-button" id="copyButton" type="button">复制文字行程</button></div>
+        </div>
+        <div class="day-tabs" role="tablist" aria-label="每日行程选择">
+          <button class="day-tab active" role="tab" aria-selected="true" data-day="day1">D1 <small>09.30</small></button>
+          <button class="day-tab" role="tab" aria-selected="false" data-day="day2">D2 <small>10.01</small></button>
+          <button class="day-tab" role="tab" aria-selected="false" data-day="day3">D3 <small>10.02</small></button>
+          <button class="day-tab" role="tab" aria-selected="false" data-day="day4">D4 <small>10.03</small></button>
+          <button class="day-tab" role="tab" aria-selected="false" data-day="day5">D5 <small>10.04</small></button>
+          <button class="day-tab" role="tab" aria-selected="false" data-day="day6">D6 <small>10.05</small></button>
+        </div>
+
+        <article class="day-panel active" data-panel="day1">
+          <div class="day-header"><div><span class="day-number">01</span><div><p class="eyebrow dark">Wednesday · Arrival</p><h3>深圳 → 景德镇</h3></div></div><span class="stay-pill">住 · 景德镇</span></div>
+          <div class="timeline">
+            <div class="time-item"><time>16:00—21:00</time><div><strong>深圳北 → 景德镇北</strong><p>高铁抵达后直接打车去酒店。以实际车次为准，国庆票开售即买。</p></div></div>
+            <div class="time-item"><time>21:30</time><div><strong>入住与晚餐</strong><p>不再安排景点。可就近吃冷粉、牛骨粉或油条包麻糍。</p></div></div>
+          </div>
+          <div class="day-foot"><span>交通：高铁＋市区打车</span><span>关键词：轻装抵达</span></div>
+        </article>
+
+        <article class="day-panel" data-panel="day2">
+          <div class="day-header"><div><span class="day-number">02</span><div><p class="eyebrow dark">Thursday · Ceramic city</p><h3>景德镇：博物馆到陶溪川</h3></div></div><span class="stay-pill">住 · 景德镇</span></div>
+          <div class="timeline">
+            <div class="time-item"><time>09:00—11:30</time><div><strong>中国陶瓷博物馆</strong><p>重点看陶瓷史、名窑展和“无语佛”。免费实名预约，建议抢开馆后的早场。</p></div></div>
+            <div class="time-item"><time>11:30—13:00</time><div><strong>陶阳里周边午餐</strong><p>安排赣菜或当地小吃，午后继续步行与打车结合。</p></div></div>
+            <div class="time-item"><time>13:00—16:00</time><div><strong>御窑博物馆＋陶阳里</strong><p>看红砖建筑、御窑遗址和历史街区。门票 / 预约以官方页面为准。</p></div></div>
+            <div class="time-item"><time>16:30—21:00</time><div><strong>陶溪川文创街区</strong><p>逛老厂房、手作瓷器和夜景，晚餐在街区解决。公共街区通常免票。</p></div></div>
+          </div>
+          <div class="day-foot"><span>交通：网约车为主</span><span>预约：中国陶瓷博物馆</span></div>
+        </article>
+
+        <article class="day-panel" data-panel="day3">
+          <div class="day-header"><div><span class="day-number">03</span><div><p class="eyebrow dark">Friday · Move south</p><h3>景德镇半日 → 玉山</h3></div></div><span class="stay-pill">住 · 玉山</span></div>
+          <div class="timeline">
+            <div class="time-item"><time>09:30—11:30</time><div><strong>雕塑瓷厂</strong><p>买小件陶瓷，安排手作体验；若有乐天市集，以当日官方公告为准。</p></div></div>
+            <div class="time-item"><time>12:00—13:30</time><div><strong>午餐、回酒店取行李</strong><p>退房后前往车站或上车点。</p></div></div>
+            <div class="time-item"><time>14:00—18:00</time><div><strong>景德镇 → 玉山</strong><p>查询景德镇北→玉山南；若需要多次换乘，三人改包车。抵达后采购登山食品。</p></div></div>
+          </div>
+          <div class="day-foot"><span>交通：高铁优先 / 复杂换乘则包车</span><span>住：玉山连住第1晚</span></div>
+        </article>
+
+        <article class="day-panel" data-panel="day4">
+          <div class="day-header"><div><span class="day-number">04</span><div><p class="eyebrow dark">Saturday · Mountain day</p><h3>三清山经典白天环线</h3></div></div><span class="stay-pill">住 · 玉山</span></div>
+          <div class="timeline">
+            <div class="time-item"><time>06:00</time><div><strong>玉山 → 金沙索道</strong><p>提前约车，目标7点前到索道。</p></div></div>
+            <div class="time-item"><time>07:00—08:30</time><div><strong>排队、乘金沙索道上山</strong><p>提前购买景区门票＋金沙索道往返票，具体价格和运营时间以官方公告为准。</p></div></div>
+            <div class="time-item"><time>08:30—14:30</time><div><strong>巨蟒出山 → 东方女神 → 玉台 → 南清园 → 阳光海岸</strong><p>山上简餐。阳光海岸按当天体力和客流决定。</p></div></div>
+            <div class="time-item"><time>14:30—17:30</time><div><strong>返回索道，下山回玉山</strong><p>不住山顶就不要赌日落；务必提前向下行索道方向返回。</p></div></div>
+          </div>
+          <div class="day-foot"><span>路线：金沙索道上下</span><span>原则：不走西海岸、不赶夜路</span></div>
+        </article>
+
+        <article class="day-panel" data-panel="day5">
+          <div class="day-header"><div><span class="day-number">05</span><div><p class="eyebrow dark">Sunday · Lake city</p><h3>玉山 → 杭州：龙井与西湖</h3></div></div><span class="stay-pill">住 · 杭州</span></div>
+          <div class="timeline">
+            <div class="time-item"><time>08:30—11:30</time><div><strong>玉山南 → 杭州东</strong><p>优先买直达；没有合适车次时经上饶换乘，换乘至少留60分钟。</p></div></div>
+            <div class="time-item"><time>13:30—17:30</time><div><strong>龙井村 → 九溪烟树</strong><p>龙井村和九溪免费、不需预约。国庆道路拥堵，使用网约车或公共交通。</p></div></div>
+            <div class="time-item"><time>18:00以后</time><div><strong>西湖湖滨夜景</strong><p>湖滨、断桥或西湖西线择一游览。</p></div></div>
+          </div>
+          <div class="day-foot"><span>交通：高铁＋杭州网约车</span><span>住：杭州机场交通方便区域</span></div>
+        </article>
+
+        <article class="day-panel" data-panel="day6">
+          <div class="day-header"><div><span class="day-number">06</span><div><p class="eyebrow dark">Monday · Return</p><h3>灵隐寺 → 杭州萧山机场</h3></div></div><span class="stay-pill">18:00 航班</span></div>
+          <div class="timeline">
+            <div class="time-item"><time>06:30—09:30</time><div><strong>灵隐寺＋飞来峰</strong><p>尽量早到。灵隐寺香花券和飞来峰门票是两项，按官方页面分别确认。</p></div></div>
+            <div class="time-item"><time>10:00—13:00</time><div><strong>西湖西线</strong><p>曲院风荷、苏堤、花港观鱼三选一段，保留体力和行李时间。</p></div></div>
+            <div class="time-item"><time>14:00—16:00</time><div><strong>取行李 → 萧山机场</strong><p>18:00航班建议16点前到机场。国庆从市区到机场至少预留1.5小时。</p></div></div>
+          </div>
+          <div class="day-foot"><span>返程：杭州萧山机场</span><span>安全线：不晚于14:30离开市区</span></div>
+        </article>
+      </section>
+
+      <section class="section shell split-section" id="booking">
+        <div class="section-heading compact"><div><p class="eyebrow dark">Book before you go</p><h2>预约与购票节奏</h2></div></div>
+        <div class="booking-layout">
+          <div class="booking-list">
+            <div class="booking-row"><span class="booking-date">现在</span><div><strong>先锁可取消住宿</strong><p>景德镇2晚、玉山2晚、杭州1晚。房型确认3位成人可入住，优先家庭房 / 三人间。</p></div><span class="status ready">可执行</span></div>
+            <div class="booking-row"><span class="booking-date">约9月中旬</span><div><strong>12306分批开票</strong><p>铁路通常提前15天售票，各车站起售时间不同。提前录入同行人，盯住深圳北→景德镇北、景德镇北→玉山南、玉山南→杭州东。</p></div><span class="status watch">提醒</span></div>
+            <div class="booking-row"><span class="booking-date">票务开放后</span><div><strong>三清山门票＋金沙索道</strong><p>在“三清山旅游”官方渠道选择10月3日、金沙索道、往返票。价格、运营时间和检票规则以当天页面为准。</p></div><span class="status urgent">优先</span></div>
+            <div class="booking-row"><span class="booking-date">预约开放后</span><div><strong>中国陶瓷博物馆、御窑博物馆</strong><p>前者通常免费实名预约；后者按官方页面购票或预约。国庆不要把热门馆安排到下午最后一场。</p></div><span class="status urgent">优先</span></div>
+            <div class="booking-row"><span class="booking-date">杭州行前</span><div><strong>灵隐寺＋飞来峰</strong><p>灵隐寺香花券和飞来峰门票分开确认，选择10月5日早时段；西湖、龙井村、九溪本身不需要门票预约。</p></div><span class="status watch">提醒</span></div>
+          </div>
+          <aside class="note-card"><p class="eyebrow">Before booking</p><h3>出发前确认</h3><p>车次、门票价格、索道运营时间和景区限流，以12306及各景区官方公告为准。</p><div class="note-rule"></div><p class="note-small">实名预约提前准备三位同行人的证件信息。</p></aside>
+        </div>
+      </section>
+
+      <section class="section shell stay-section" id="stay">
+          <div class="section-heading compact"><div><p class="eyebrow dark">Sleep well</p><h2>住宿落点</h2></div><p class="section-note">三人房型请提前确认入住人数与加床规则。</p></div>
+        <div class="stay-grid">
+          <article class="stay-card"><div class="stay-image image-jingdezhen" role="img" aria-label="景德镇陶瓷窑房与青花瓷"></div><div class="stay-content"><span class="stay-index">01 · 2晚</span><h3>景德镇</h3><strong>全季陶溪川店</strong><p>靠近陶溪川，兼顾景德镇市区景点和晚间休闲。</p><span class="stay-tag">市区 / 夜游</span></div></article>
+          <article class="stay-card"><div class="stay-image image-yushan" role="img" aria-label="三清山峰林与山间栈道"></div><div class="stay-content"><span class="stay-index">02 · 2晚</span><h3>玉山</h3><strong>全季金山大道店</strong><p>作为三清山基地连住两晚，登山前后都不搬行李。</p><span class="stay-tag">登山基地</span></div></article>
+          <article class="stay-card"><div class="stay-image image-hangzhou" role="img" aria-label="杭州西湖、雷峰塔与龙井茶山"></div><div class="stay-content"><span class="stay-index">03 · 1晚</span><h3>杭州</h3><strong>全季 · 龙翔桥 / 凤起路片区</strong><p>方便安排西湖夜景、灵隐寺，并控制去萧山机场的时间。</p><span class="stay-tag">返程友好</span></div></article>
+        </div>
+      </section>
+
+      <section class="section shell checklist-section" id="checklist">
+        <div class="checklist-header"><div><p class="eyebrow dark">Before departure</p><h2>出发前清单</h2></div><span class="progress" id="progressText">0 / 6</span></div>
+        <div class="checklist" id="checklistItems">
+          <label class="check-item"><input type="checkbox" /><span>录入3位同行人证件信息</span></label>
+          <label class="check-item"><input type="checkbox" /><span>锁定5晚可取消酒店与合适房型</span></label>
+          <label class="check-item"><input type="checkbox" /><span>设置12306开票提醒并准备候补</span></label>
+          <label class="check-item"><input type="checkbox" /><span>预约中国陶瓷博物馆与御窑博物馆</span></label>
+          <label class="check-item"><input type="checkbox" /><span>购买三清山金沙索道往返票</span></label>
+          <label class="check-item"><input type="checkbox" /><span>预约灵隐寺、飞来峰早时段</span></label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="shell footer-inner"><div><a class="brand footer-brand" href="#top"><span class="brand-mark">JZ</span><span>瓷都入山</span></a><p>2026 国庆 · 景德镇 × 三清山 × 杭州</p></div><a href="#top" class="back-top">回到顶部 ↑</a></div></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
