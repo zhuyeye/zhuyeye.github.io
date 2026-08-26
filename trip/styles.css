@@ -122,7 +122,7 @@ h2 span { color: var(--coral); }
 .stay-card { background: var(--white); }
 .stay-image { height: 160px; background-position: center; background-size: cover; }
 .image-jingdezhen { background-image: url("assets/jingdezhen-real.jpg"); }
-.image-yushan { background-image: url("assets/sanqingshan-real.jpg"); }
+.image-sanqingshan { background-image: url("assets/sanqingshan-real.jpg"); }
 .image-shangrao { background-image: url("assets/shangrao-real.jpg"); }
 .image-hangzhou { background-image: url("assets/hangzhou-real.jpg"); }
 .stay-content { padding: 22px 22px 24px; }
